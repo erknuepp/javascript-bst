@@ -1,0 +1,13 @@
+{
+  "name": "@unlsoft/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint configuration used by the UNL SOFT core courses.",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": ">= 6"
+  },
+  "peerDependencies": {
+    "eslint": ">= 6"
+  }
+}

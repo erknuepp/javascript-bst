@@ -1,0 +1,30 @@
+{
+  "name": "@unlsoft/homework-5",
+  "version": "1.0.0",
+  "description": "A project skeleton to be used as starter code for Homework 5.",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "postinstall:eslint-config": "cd eslint-config && npm install",
+    "postinstall:app": "cd homework-5 && npm install",
+    "postinstall": "run-s postinstall:**",
+    "lint:app": "cd homework-5 && npm run lint",
+    "lint": "run-s --continue-on-error lint:**",
+    "test-once:add": "cd homework-5 && npm run test-once:add",
+    "test-once:addAndDelete": "cd homework-5 && npm run test-once:addAndDelete",
+    "test-once": "cd homework-5 && npm run test-once",
+    "test": "run-s test-once",
+    "start": "cd homework-5 && npm run start",
+    "build:app": "cd homework-5 && npm run build",
+    "build": "run-s build:**"
+  },
+  "devDependencies": {
+    "ghooks": "^2.0.4",
+    "npm-run-all": "^4.1.5"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
